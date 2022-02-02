@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    color: #c9d1d9;
+    font-size: 15px;
+}
+
+body {
+    background-color: #010409;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    div.content {
+        padding: 20px 100px;
+        background-color: #0d1117;
+        border-radius: 10px;
+        border: 1px solid #30363d;
+
+        div.input-group {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+
+            input{
+                background-color: #010409;
+                border: 1px solid #30363d;
+                color: #757575;
+                height: 30px;
+                padding: 0 10px;
+                border-radius: 2px;
+            }
+    
+            i {
+                cursor: pointer;
+                color: #757575;
+                margin-left: 5px;
+                font-size: 25px;
+                transition: 0.3s;
+
+                &:hover{
+                    color: #fff;
+                }
+
+                &:active{
+                    color: #757575;
+                }
+            }
+        }
+        div.result-table {
+            display: none;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+            h3.card-header {
+                color: #f0f6fc;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                font-size: 30px;
+            }
+
+            ul.unfollowers {
+                list-style-type: none;
+
+                li.unfollower {
+                border: 1px solid #30363d;
+
+                    background-color: #161b22;
+                    color: #aeaeae;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding: 10px 15px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}
+
+section#follower, section#following{
+    display: none;
+}
+
+input#input-following{
+    margin-left: 5px;
+}
