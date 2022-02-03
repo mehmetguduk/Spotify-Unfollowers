@@ -15,6 +15,7 @@ div.container {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 100px;
 
     div.content {
         padding: 20px 100px;
@@ -28,15 +29,21 @@ div.container {
             display: flex;
             align-items: center;
 
-            input{
+            input {
                 background-color: #010409;
                 border: 1px solid #30363d;
                 color: #757575;
                 height: 30px;
                 padding: 0 10px;
                 border-radius: 2px;
+                transition: 0.5s;
+
+                &:focus {
+                    outline: none;
+                    border: 1px solid #757575;
+                }
             }
-    
+
             i {
                 cursor: pointer;
                 color: #757575;
@@ -44,11 +51,11 @@ div.container {
                 font-size: 25px;
                 transition: 0.3s;
 
-                &:hover{
+                &:hover {
                     color: #fff;
                 }
 
-                &:active{
+                &:active {
                     color: #757575;
                 }
             }
@@ -61,33 +68,67 @@ div.container {
             h3.card-header {
                 color: #f0f6fc;
                 text-align: center;
-                padding-top: 10px;
-                padding-bottom: 30px;
-                font-size: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 25px;
+                font-weight: 300;
             }
 
             ul.unfollowers {
                 list-style-type: none;
 
                 li.unfollower {
-                border: 1px solid #30363d;
-
+                    border: 1px solid #30363d;
                     background-color: #161b22;
                     color: #aeaeae;
                     margin-top: 10px;
                     margin-bottom: 10px;
                     padding: 10px 15px;
                     border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    a {
+                        margin: 0 10px;
+                        cursor: pointer;
+                        text-decoration: none;
+                        transition: 0.2s;
+
+                        &:hover {
+                            color: #1ed760;
+                        }
+                    }
+
+                    img {
+                        width: 20px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        div.project-owner {
+            width: 100%;
+            text-align: center;
+            a {
+                text-decoration: none;
+                transition: 0.2s;
+                font-size: 12px;
+                color: #757575;;
+
+                &:hover {
+                    color: #1ed760;
                 }
             }
         }
     }
 }
 
-section#follower, section#following{
+section#follower,
+section#following {
     display: none;
 }
 
-input#input-following{
+input#input-following {
     margin-left: 5px;
 }
