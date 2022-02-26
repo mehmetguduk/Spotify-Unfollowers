@@ -1,3 +1,8 @@
+/*
+THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+© 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+*/
+
 /*  TAGS  */
 let hidden_follower = document.querySelector("#follower");
 let hidden_following = document.querySelector("#following");
@@ -7,7 +12,7 @@ let unfollowers_list = document.querySelector(".unfollowers");
 let result_table = document.querySelector(".result-table");
 let card_header = document.querySelector(".card-header");
 
-document.getElementById("submit").addEventListener("click", function () {
+document.querySelector(".fa-search").addEventListener("click", function () {
 
     if (input_followers.value !== "" && input_following.value !== "") {
 

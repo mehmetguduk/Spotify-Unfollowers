@@ -1,3 +1,8 @@
+<!--
+THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+© 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,22 +13,22 @@
     <script src="https://kit.fontawesome.com/845e11152e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="spotify-unfollower.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&family=Jura:wght@300;400;500;600;700&family=Raleway&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
     <title>Spotify Unfollowers</title>
 </head>
 
 <body">
 
-    <a class="gif" href="how.gif"><img src="how.gif"></a>
+    <div class="gif-container">
+        <a class="gif" href="how.gif" target="_blank"><img src="how.gif"></a>
+    </div>
 
     <div class="container">
         <div class="content">
             <div class="input-group">
-                <input type="text" id="input-followers" placeholder="Follower">
-                <input type="text" id="input-following" placeholder="Following">
-                <i class="fas fa-arrow-circle-right" id="submit"></i>
+                <input type="text" id="input-followers" placeholder="Follower" autocomplete="none">
+                <input type="text" id="input-following" placeholder="Following" autocomplete="none">
+                <a id="submit"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
 
             <div class="result-table">
@@ -33,13 +38,40 @@
             </div>
 
             <div class="project-owner">
-                <a href="https://github.com/mehmetguduk">Project Owner | Mehmet Güdük</a>
+                <p class="copyright">
+                    © 2022 Copyright <a class="copyright-link" href="https://github.com/mehmetguduk"
+                        target="_blank">Mehmet
+                        Güdük</a> All Rights Reserved
+                </p>
             </div>
         </div>
     </div>
 
     <section id="follower"></section>
     <section id="following"></section>
+
+    <i id="back-to-top" class="fa fa-chevron-up" aria-hidden="true"></i>
+
+    <script>
+        const BACK_TO_TOP = document.querySelector("#back-to-top")
+
+        window.addEventListener("scroll", function (event) {
+            if (this.scrollY > 300) {
+                BACK_TO_TOP.style.display = "block";
+            }
+            else {
+                BACK_TO_TOP.style.display = "none";
+            }
+        });
+
+        BACK_TO_TOP.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            })
+        });
+    </script>
 
     <script src="script.js"></script>
     </body>
