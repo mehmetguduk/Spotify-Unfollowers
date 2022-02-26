@@ -176,11 +176,11 @@ div.container {
 
             p.copyright {
                 text-align: center;
-                font-size: 12px;
+                font-size: 11px;
                 color: var(--gray2);
 
                 a.copyright-link {
-                    font-size: 12px;
+                    font-size: 11px;
                     text-decoration: none;
                     color: var(--blue);
                     font-weight: 700;
@@ -220,26 +220,29 @@ i#back-to-top {
     :root {
         --contentpadding: 50px 60px;
         --fontsize1: 20px;
+        --sectionmargin: 30px;
     }
 }
 @media only screen and (max-width: 500px) {
     :root {
-        --contentpadding: 50px 30px;
+        --contentpadding: 30px;
         --fontsize2: 14px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     :root {
-        --contentpadding: 50px 10px;
+        --contentpadding: 30px 10px;
         --fontsize2: 13px;
+        --sectionmargin: 20px;
     }
 }
 
 @media only screen and (max-width: 200px) {
     :root {
-        --contentpadding: 50px 5px;
+        --contentpadding: 10px 5px;
         --fontsize1: 18px;
         --fontsize2: 12px;
+        --sectionmargin: 10px;
     }
 }
