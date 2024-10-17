@@ -25,8 +25,8 @@ document.querySelector(".fa-search").addEventListener("click", function () {
         hidden_follower.innerHTML = `${input_followers.value}`
         hidden_following.innerHTML = `${input_following.value}`
 
-        let following_data = document.querySelectorAll("#following .XiVwj5uoqqSFpS4cYOC6");
-        let follower_data = document.querySelectorAll("#follower .XiVwj5uoqqSFpS4cYOC6");
+        let following_data = document.querySelectorAll("#following .iKwGKEfAfW7Rkx2_Ba4E");
+        let follower_data = document.querySelectorAll("#follower .iKwGKEfAfW7Rkx2_Ba4E");
 
         following_data.forEach(u => {
             let name = u.querySelector(".hscyXl").textContent;
