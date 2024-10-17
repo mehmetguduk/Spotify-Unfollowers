@@ -29,7 +29,7 @@ document.querySelector(".fa-search").addEventListener("click", function () {
         let follower_data = document.querySelectorAll("#follower .XiVwj5uoqqSFpS4cYOC6");
 
         following_data.forEach(u => {
-            let name = u.querySelector(".bFhcPb").textContent;
+            let name = u.querySelector(".hscyXl").textContent;
             let url = "https://open.spotify.com" + u.querySelector("a").getAttribute("href");
             let img;
             try { img = u.querySelector("img").getAttribute("src") }
@@ -41,7 +41,7 @@ document.querySelector(".fa-search").addEventListener("click", function () {
         })
 
         follower_data.forEach(u => {
-            let name = u.querySelector(".bFhcPb").textContent;
+            let name = u.querySelector(".hscyXl").textContent;
             follower_list.push(name);
         })
 
