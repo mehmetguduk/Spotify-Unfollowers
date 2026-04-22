@@ -45,7 +45,7 @@ document.querySelector(".fa-search").addEventListener("click", function () {
         });
 
         follower_data.forEach(u => {
-            let name = u.querySelector(".CardTitle__CardText-sc-1h38un4-1").textContent; // Güncel isim
+            let name = u.querySelector(".e-10310-line-clamp").textContent; // Güncel isim
             follower_list.push(name);
         });
 
