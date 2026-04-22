@@ -28,9 +28,6 @@ document.querySelector(".fa-search").addEventListener("click", function () {
         let following_data = document.querySelectorAll("#following .Card");
         let follower_data = document.querySelectorAll("#follower .Card");
 
-        console.log(following_data)
-        console.log(follower_data)
-
         following_data.forEach(u => {
             let name = u.querySelector(".CardTitle__CardText-sc-1h38un4-1").textContent; // Güncel isim
             let url = "https://open.spotify.com" + u.querySelector("a").getAttribute("href");
@@ -43,6 +40,7 @@ document.querySelector(".fa-search").addEventListener("click", function () {
             }
 
             let user = { name: name, url: url, img: img };
+            console.log(user)
             following_list.push(user);
         });
 
